@@ -13,7 +13,8 @@ func main() {
 	// fmt.Println(len(nums))
 
 	var nums = make([]int, 2)
+	fmt.Println(cap(nums))
 
-	fmt.Println(nums == nil)
+	// fmt.Println(nums == nil)
 
 }
