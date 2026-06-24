@@ -21,5 +21,6 @@ func main() {
 	nums = append(nums, 2)
 	fmt.Println(nums)
 	fmt.Println(cap(nums))
+	fmt.Println(len(nums))
 
 }
