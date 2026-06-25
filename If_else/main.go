@@ -37,6 +37,6 @@ func main() {
 	} else if age >= 12 {
 		fmt.Println("Person is Teenager", age)
 
-		// Go does not have Ternary Operator
+		// Go does not have Ternary Operator, use if else instead
 	}
 }
