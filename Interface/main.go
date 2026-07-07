@@ -44,6 +44,10 @@ func (p paypal) pay(amount float32) {
 	fmt.Println("Making Payment using paypal", amount)
 }
 
+func (p paypal) refund(amount float32, account string) {
+	   
+}
+
 func main() {
 	// stripePaymentGw := stripe{}
 	// razorpayPaymentGw := razorpay{}
