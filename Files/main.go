@@ -1,8 +1,19 @@
 package main
 
-import (
-	"os"
-)
+// const (
+// 	deafultBufSize = 4096
+// )
+
+// var (
+// 	ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")
+// 	ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")
+// 	ErrBufferFull        = errors.New("bufio: buffer full")
+// 	ErrNegativeCount     = errors.New(" negative count ")
+// )
+
+// Buffered input
+
+// Reader implements buffering for an io.Reader object.
 
 func main() {
 	// f, err := os.Open("example.txt")
@@ -68,12 +79,12 @@ func main() {
 
 	// Creating the file
 
-	f, err := os.Create("example2.txt")
-	if err != nil {
-		panic(err)
-	}
+	// f, err := os.Create("example2.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	defer f.Close()
+	// defer f.Close()
 
 	// f.WriteString("Hello from Team Tanjavur")
 	// f.WriteString("South India")
@@ -84,18 +95,55 @@ func main() {
 
 	// read and write to another file (streaming fashion)
 
-	sourceFile, err := os.Open("example.txt")
-	if err != nil {
-		panic(err)
-	}
+	// sourceFile, err := os.Open("example.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	defer sourceFile.Close()
+	// defer sourceFile.Close()
 
-	destFile, err := os.Create("example2.txt")
-	if err != nil {
-		panic(err)
-	}
+	// destFile, err := os.Create("example2.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	defer destFile.Close()
+	// defer destFile.Close()
+
+	// reader := bufio.NewReader(sourceFile)
+	// writer := bufio.NewWriter(destFile)
+
+	// for {
+	// 	b, err := reader.ReadByte()
+	// 	if err != nil {
+	// 		if err.Error() != "EOF" {
+	// 			panic(err)
+	// 		}
+	// 		break
+	// 	}
+
+	// 	e := writer.WriteByte(b)
+	// 	if err != nil {
+	// 		panic(e)
+	// 	}
+	// }
+	// writer.Flush()
+
+	// fmt.Println("Written to new file successfully")
+
+	// Delete a file
+
+	// sourceFile, err := os.Open("example2.txt")
+	// if err != nil {
+	// 	 panic(err)
+	// }
+
+	// defer sourceFile.Close()
+
+	// err := os.Remove("example2.txt")
+	// if err != nil {
+	// 	panic(err)
+	// }
+
+	// fmt.Println("File Deleted successfully")
 
 }
