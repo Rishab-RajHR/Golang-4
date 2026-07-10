@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/fatih/color"
 	"github.com/packages/auth"
 	"github.com/packages/user"
 )
@@ -14,10 +15,11 @@ func main() {
 
 	user := user.User{
 		Email: "user@gmail.com",
-		Name:  "John Doe",
+		// Name:  "John Doe",
 	}
 
-	fmt.Println(user.Email)
-	fmt.Println(user.Name)
+	// fmt.Println(user.Email)
+	// fmt.Println(user.Name)
+	color.Red(user.Email)
 
 }

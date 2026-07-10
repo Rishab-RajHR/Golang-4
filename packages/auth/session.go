@@ -1,5 +1,9 @@
 package auth
 
-func GetSession() string {
+func extractSession() string {
 	return "loggedin"
+}
+
+func GetSession() string {
+	return extractSession()
 }
